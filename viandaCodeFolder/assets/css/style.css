@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+/* TYPOGRAPHY */
+/* ___________________________________ */
+/* Brødtekst */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Overskrifter */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* VARIABLES */
+/* ___________________________________ */
+
+:root {
+    /* Farver */
+    --brown400: #6E5C55;
+    --brownBase: #523D35;
+    --orangeLight: #DFA96A;
+    --orangeBase: #D08124;
+    --baige50: #FFF8EE;
+    --baige100: #FFF6EA;
+    --baige200: #FFF2E0;
+    --baigeLight: #FFEED7;
+    --baigeBase: #FFEED7;
+    --baigeDark: #AD9C85;
+
+    /* Spacere */
+
+    --SmallSpacer: 45px;
+    --dMediumSpacer: 60px;
+    --LargeSpacer: 90px;
+
+    /* Font weight */
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+/* Styling */
+/* ___________________________________ */
