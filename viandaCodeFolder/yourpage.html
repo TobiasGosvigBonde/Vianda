@@ -1,13 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vianda | Your page</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/app.js" defer></script>
+    <title>Vianda - Recipe Hub</title>
+    <link rel="stylesheet" href="yourpage.css">
+    <script src="https://kit.fontawesome.com/dff47bae81.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="logo">VIANDA</div>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="">
+            <span class="search-icon">🔍</span>
+        </div>
+        <div class="header-actions">
+            <button class="create-btn">Create</button>
+            <button class="profile-btn">👤</button>
+            <button class="profile-btn">⚙️</button>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <nav class="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-title">RECIPE HUB</div>
+                <a href="#" class="sidebar-item">🏠 Home</a>
+                <a href="#" class="sidebar-item">📖 Food stories</a>
+                <a href="#" class="sidebar-item">🧭 Explore</a>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">FOLLOWING</div>
+                <div class="following-item">
+                    <div class="following-avatar"></div>
+                    Jacob Fontanelli
+                </div>
+                <div class="following-item">
+                    <div class="following-avatar"></div>
+                    Mia Rodriguez
+                </div>
+                <div class="following-item">
+                    <div class="following-avatar"></div>
+                    Joni Montana
+                </div>
+                <div class="following-item">
+                    <div class="following-avatar"></div>
+                    Elsa Hansen
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">RECENT RECIPES</div>
+                <div class="following-item">
+                    <div class="following-avatar"></div>
+                    Pasta Carbonara
+                </div>
+                <div class="following-item">
+                    <div class="following-avatar"></div>
+                    Egg-fried rice
+                </div>
+                <div class="following-item">
+                    <div class="following-avatar"></div>
+                    Potato salad
+                </div>
+                <div class="following-item">
+                    <div class="following-avatar"></div>
+                    Butter chicken
+                </div>
+            </div>
+        </nav>
+
+        <main class="content">
+            <section class="profile-section">
+                <h2>Your profile</h2>
+                <div class="profile-info">
+                    <div class="profile-avatar"></div>
+                    <div class="profile-details">
+                        <h3>Ellis Barrie</h3>
+                        <p>Professional chef</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recipes-section">
+                <h2>Your recipes</h2>
+                <div class="recipes-grid">
+                    <div class="recipe-card new-recipe-card">
+                        <div class="plus-icon">+</div>
+                        <div class="new-recipe-text">New recipe</div>
+                    </div>
+
+                    <div class="recipe-card">
+                        <div class="recipe-image spaghetti-card"></div>
+                        <div class="recipe-overlay">
+                            <div class="recipe-title">Easy spaghetti carbonara</div>
+                            <div class="recipe-stats">
+                                <div class="recipe-stat">⏰ 30 min</div>
+                                <div class="recipe-stat">👥 4 people</div>
+                                <div class="recipe-stat">⭐ 500</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card">
+                        <div class="recipe-image spaghetti-card"></div>
+                        <div class="recipe-overlay">
+                            <div class="recipe-title">Easy spaghetti carbonara</div>
+                            <div class="recipe-stats">
+                                <div class="recipe-stat">⏰ 30 min</div>
+                                <div class="recipe-stat">👥 4 people</div>
+                                <div class="recipe-stat">⭐ 500</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card">
+                        <div class="recipe-image spaghetti-card"></div>
+                        <div class="recipe-overlay">
+                            <div class="recipe-title">Easy spaghetti carbonara</div>
+                            <div class="recipe-stats">
+                                <div class="recipe-stat">⏰ 30 min</div>
+                                <div class="recipe-stat">👥 4 people</div>
+                                <div class="recipe-stat">⭐ 500</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card">
+                        <div class="recipe-image spaghetti-card"></div>
+                        <div class="recipe-overlay">
+                            <div class="recipe-title">Easy spaghetti carbonara</div>
+                            <div class="recipe-stats">
+                                <div class="recipe-stat">⏰ 30 min</div>
+                                <div class="recipe-stat">👥 4 people</div>
+                                <div class="recipe-stat">⭐ 500</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card">
+                        <div class="recipe-image spaghetti-card"></div>
+                        <div class="recipe-overlay">
+                            <div class="recipe-title">Easy spaghetti carbonara</div>
+                            <div class="recipe-stats">
+                                <div class="recipe-stat">⏰ 30 min</div>
+                                <div class="recipe-stat">👥 4 people</div>
+                                <div class="recipe-stat">⭐ 500</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="your-recipes-section">
+                <h2>Your recipes</h2>
+                <div class="your-recipes-grid">
+                    <div class="your-recipe-card fever-card">
+                        <div class="your-recipe-overlay">
+                            <div class="your-recipe-title">Fever Calories - Fever problems</div>
+                            <div class="your-recipe-subtitle">Chris Finch</div>
+                        </div>
+                    </div>
+
+                    <div class="your-recipe-card ghana-card">
+                        <div class="your-recipe-overlay">
+                            <div class="your-recipe-title">From Ghana to NY</div>
+                            <div class="your-recipe-subtitle">Sophia Jiggetts</div>
+                        </div>
+                    </div>
+
+                    <div class="your-recipe-card carnival-card">
+                        <div class="your-recipe-overlay">
+                            <div class="your-recipe-title">Carnival favorites</div>
+                            <div class="your-recipe-subtitle">My Story Wilson</div>
+                        </div>
+                    </div>
+
+                    <div class="your-recipe-card carnival-card">
+                        <div class="your-recipe-overlay">
+                            <div class="your-recipe-title">Carnival favorites</div>
+                            <div class="your-recipe-subtitle">My Story Wilson</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="products-section">
+                <h2>Products you recommend</h2>
+            </section>
+        </main>
+    </div>
 </body>
+
 </html>
