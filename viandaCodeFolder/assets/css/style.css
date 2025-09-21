@@ -169,13 +169,32 @@ p{
 
 
 /* ----------------Main-------------- */
-main{
+main {
     display: grid;
-    grid-template-columns: 90px, 1fr, 1fr, 1fr, 1fr, 90px;
+    grid-template-columns: 90px 220px 1fr 90px;
+    /* margin, sidenav, content, margin */
     gap: 20px;
     max-width: 1920px;
-    margin-right: 90px;
-    
+    margin: 0 auto;
+    /* centrerer hele grid */
+}
+
+/* Sidenav placering */
+.sideNav {
+    grid-column: 2;
+    /* kolonne 2 = venstre */
+    background-color: var(--baigeLight);
+    padding-left: 20px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+/* Content placering */
+.content {
+    grid-column: 3;
+    /* kolonne 3 = højre */
+    padding: 40px;
 }
 
 
@@ -224,7 +243,7 @@ nav{
     background-color: var(--baigeLight);
     padding: 10px;
     border-radius: 6px;
-    height: 25px;
+    height: 45px;
     text-decoration: none;
 }
 
@@ -243,8 +262,8 @@ nav{
     background-color: var(--baigeLight);
     padding: 10px;
     border-radius: 6px;
-    height: 25px;
-    width: 25px;
+    height: 45px;
+    width: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -883,249 +902,276 @@ margin-top: 10px;
     margin: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Brizze kode */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.recipeHub, .following, .likedRecipes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.content {
+    flex: 1;
+    background-color: white;
+}
+
+.profile-section {
+    margin-bottom: 40px;
+}
+
+.profile-section h2 {
+    font-size: 20px;
+    color: #8B6F47;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+.profile-info {
+    display: flex;
+    gap: 25px;
+}
+
+.profile-avatar {
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    background: url('../img/ellisProfilePictureBig.png');
+}
+
+.profile-details h3 {
+    font-size: 64px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profile-details p {
+    color: #666;
+    font-size: 24px;
+}
+
+.recipes-section h2 {
+    font-size: 20px;
+    color: #8B6F47;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.recipe-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+    height: 250px;
+}
+
+.new-recipe-card {
+    background: linear-gradient(45deg, #F5E6D3, #E8D5B7);
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #8B6F47;
+    width: 100%;
+}
+
+.plus-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #8B6F47;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 64px;
+    margin-bottom: 15px;
+}
+
+.new-recipe-text {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.recipe-image {
+    width: 100%;
+    aspect-ratio: 1;
+    height: auto; /* fallback hvis aspect-ratio ikke understøttes */
+    background-image: url("../img/spaghettiCarbonara.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.recipe-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #FFEED7;
+    color: #523D35;
+    padding: 15px;
+}
+
+.recipe-title {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.recipe-stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    font-size: 11px;
+    opacity: 0.9;
+}
+
+.recipe-stat {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.h3controller {
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.yourStoriesHeader {
+    grid-column: 3/5;
+    grid-row: 4;
+    margin-top: 90px;
+}
+
+.yourfoodStories {
+    grid-column: 3/5;
+    grid-row: 5;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.yourfoodStoriesCard {
+    background-color: var(--baigeLight);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    /* Dette gør at billedet ikke flyder over på sectionen */
+    color: var(--brownBase);
+}
+
+.foodStoriesCard:hover {
+    background-color: var(--baigeBase);
+}
+
+/* Products you recommend */
+.recommended-products {
+    margin-top: 40px;
+}
+
+.recommended-products h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #4b2e2e;
+}
+
+.product-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.product-card {
+    background: #fff8f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: 31%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: -35px;
+    background: #5a3d2b;
+    color: white;
+    padding: 4px 40px;
+    transform: rotate(45deg);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.product-card .title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-card .author {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.product-card .author img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.product-card .description {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-top: 15px;
+}
+
+.product-card .product-img {
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.product-card .btn {
+    background: #f5a654;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.product-card .btn:hover {
+    background: #e28c2d;
+}
+
+.product-flexdirection {
+    display: flex;
+    flex-direction: row;
+}
+
