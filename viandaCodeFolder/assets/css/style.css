@@ -5,6 +5,9 @@ body {
 
 /* TYPOGRAPHY */
 /* ___________________________________ */
+/* Logo navn */
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
 /* Brødtekst */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
@@ -19,18 +22,19 @@ body {
     --brown400: #6E5C55;
     --brownBase: #523D35;
     --orangeLight: #DFA96A;
-    --orangeBase: #D08124;
+    --orange400: #AF6C1E;/* Ny farve */
+    --orangeBase: #D08124; 
     --baige50: #FFF8EE;
     --baige100: #FFF6EA;
     --baige200: #FFF2E0;
     --baigeLight: #FFEED7;
-    --baigeBase: #FFEED7;
+    --baigeBase: #FFE6C4;   
     --baigeDark: #AD9C85;
 
     /* Spacere */
 
     --SmallSpacer: 45px;
-    --dMediumSpacer: 60px;
+    --MediumSpacer: 60px;
     --LargeSpacer: 90px;
 
     /* Font weight */
@@ -38,19 +42,816 @@ body {
     --fw-bold: 700;
 }
 
+
 /* Styling */
 /* ___________________________________ */
+
+/* Headers styling */
+h1 {
+    font-size: 64px;
+    color: var(--brownBase);
+}
+
+h2 {
+    font-size: 48px;
+    color: var(--brownBase);
+}
+
+h3 {
+    font-size: 32px;
+    color: var(--brownBase);
+    font-weight: var(--fw-regular);
+}
+
+h4 {
+    font-size: 24px;
+    color: var(--brownBase);
+    font-weight: var(--fw-regular);
+}
+
+h5 {
+    font-size: 20px;
+    color: var(--brownBase);
+    font-weight: var(--fw-regular);
+}
+
+h6 {
+    font-size: 16px;
+    color: var(--brownBase);
+    font-weight: var(--fw-regular);
+}
+
+p{
+    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Button styling */
+.buttonBig {
+    background-color: var(--orangeBase);
+    border-radius: 70px;
+    color: white;
+    padding: 15px 48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 48px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 250px;
+    max-height: 80px;
+    justify-content: center;
+}
+
+.buttonBig:hover {
+    background-color: var(--orange400);
+}
+
+.buttonMid {
+    background-color: var(--orangeBase);
+    border-radius: 50px;
+    color: white;
+    padding: 15px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: var(--fw-regular);
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buttonSmall {
+    background-color: var(--orangeLight);
+    border-radius: 50px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buttonSmall:hover {
+    background-color: var(--orangeBase);
+}
+
+
+/* Icon styling */
+.iconBig {
+    width: 33%;
+    display: flex;
+    align-items: center;
+}
+
+.iconBig>img {
+    margin-right: 5px;
+}
+
+.iconBig>h4 {
+    width: 250px;
+}
+
+.iconMid {
+    max-width: 30px;
+}
+
+.iconSmall {
+    max-width: 15px;
+}
+
+.icons {
+    display: flex;
+}
 
 /* Bonde kode */
 
 
+/* ----------------Main-------------- */
+main{
+    display: grid;
+    grid-template-columns: 90px, 1fr, 1fr, 1fr, 1fr, 90px;
+    gap: 20px;
+    max-width: 1920px;
+    margin-right: 90px;
+    
+}
+
+
+
+/* _________Nav styling__________ */
+nav{
+    grid-column: 1/-1;
+}
+
+.topNav{
+    display: flex;
+    background-color: var(--brownBase);
+    max-height: 115px;
+    padding-right: 90px;
+    padding-left: 90px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navName{
+    font-family: 'Aboreto','Papyrus','Copperplate','Brush Script MT', cursive;
+    font-size: 64px;
+    color: var(--orangeBase);
+}
+
+.searchbar{
+    background-color: #ffffff;
+    height: 50px;
+    width: 600px;
+    border-radius: 50px;
+    justify-content:flex-start;
+}
+
+.searchbar>img{
+    padding-top: 10px;
+    padding-left: 10px;
+    max-width: 30px;
+}
+
+.navButtons{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.create{
+    background-color: var(--baigeLight);
+    padding: 10px;
+    border-radius: 6px;
+    height: 25px;
+    text-decoration: none;
+}
+
+.create:hover{
+    background-color: var(--baigeBase);
+    color: var(--brownBase);
+}
+.create>h5{
+    font-size: 20px;
+    color: var(--brown400);
+    font-family: 'Playfair Display', 'New Times Roman' cursive;
+    margin: 0;
+}
+
+.notif{
+    background-color: var(--baigeLight);
+    padding: 10px;
+    border-radius: 6px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notif:hover{
+    background-color: var(--baigeBase);
+
+}
+
+.user>a{
+    max-width: 45px;
+    max-height: 45px;
+    border-radius: 10px;
+}
+
+.user>a>img{
+    max-width: 45px;
+    max-height: 45px;
+    border-radius: 10px;
+}
 
 
 
 
+/* ---------Aside nav --------*/
+.sideNav{
+    background-color: var(--baigeLight);
+    grid-column: 1/3;
+    width: 220px;
+    padding-left: 20px;
+    height: 100vh;
+    /* Fylder hele højden af viewport */
+    position: sticky;
+    /* Gør den sticky */
+    top: 0;
+    /* Starter fra toppen af siden */
+}
+
+.sideNavButton{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: 50px;
+}
+
+.sideNavButton>img{
+    max-height: 40px;
+    margin-right: 20px;
+}
+
+.sideNavButton>h6>a{
+    text-decoration: none;
+    color: var(--brown400);
+}
+
+.sideNavButton:hover{
+    color: var(--brownBase);
+    text-decoration: underline;
+}
+
+.recipeHub>h5{
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.following>h5{
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.likedRecipes>h5{
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+
+/* ----------------Recipe of the day------------- */
+.recipeOfTheDay{
+    max-width: 100%;
+    margin-left: 90px;
+}
+
+.recipeOfTheDayTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recipeOfTheDayTop>h1{
+    margin: 20px;
+    margin-left: 0;
+}
+
+.recipeOfTheDayNamePic{
+    display: flex;
+    align-items: center;
+}
+.recipeOfTheDayNamePic>h3{
+    margin: 0;
+}
+
+.recipeOfTheDayMid>img{
+    max-width: 100%;
+}
+
+.recipeOfTheDayBottom{
+    display: flex;
+}
+
+.homeRecipeName{
+    margin: 0;
+}
+
+.homeQuoteName{
+    display: flex;
+}
+
+.homeQuote{
+    font-style: italic;
+}
+
+.homeChefName{
+    color: grey;
+}
 
 
 
+/* ---------------Top 10-------------- */
+.top10Header{
+    grid-column: 3/5;
+    grid-row: 2;
+    margin-left: 90px;
+}
+
+.top10{
+    grid-column: 3/5;
+    grid-row: 3;
+    /* margin-left: 90px; */
+    display: flex;
+}
+
+.top10>h3{
+    margin-bottom: 15px;
+    margin-top: 90px;
+}
+
+.top10Wrapper{
+    display: flex;
+}
+
+.plads{
+    margin-left: 90px;
+}
+
+.top10NameAndNumber{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.top10NameAndNumber>h5{
+    font-weight: var(--fw-bold);
+    margin: 0;
+}
+
+.top10NameAndNumber>a>img{
+    width: 40px;
+}
+
+.top10NameAndNumber>a{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.top10NameAndNumber>a>h5{
+    margin: 15px;
+}
+
+.top10Card{
+    background-color: var(--baigeLight);
+    width: 350px;
+    /* align-items: center; */
+    border-radius: 15px;
+    overflow: hidden;
+    /* Dette gør at billedet ikke flyder over på sectionen */
+    text-decoration: none;
+    color: var(--brownBase);
+    margin-right: 20px;
+}
+.top10Card>a{
+    /* align-items: center; */
+    /* Dette gør at billedet ikke flyder over på sectionen */
+    text-decoration: none;
+    color: var(--brownBase);
+}
+
+.top10Card:hover{
+    background-color: var(--baigeBase);
+}
+
+.top10A>figure{
+    margin: 0;
+}
+
+.top10A>figure>img{
+    max-width: 100%;
+    display: block;
+}
+.top10A>figcaption{
+    text-align: center;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.top10A>figcaption>h5{
+    margin: 5px;
+}
+
+.top10A>span{
+    width: 33%;
+}
+
+
+.top10Wrapper{
+    max-width: 1378px;
+    overflow: auto;
+}
+
+.top10Wrapper::-webkit-scrollbar {
+    display: none;
+    /* dette fjerner scrollbar fra overflow fra overstående css */
+}
+
+/* ----------Foodstories-------------- */
+.foodStoriesHeader{
+    grid-column: 3/5;
+    grid-row: 4;
+    margin-left: 90px;
+    margin-top: 90px;
+}
+
+.foodStoriesHeader:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.foodStoriesHeader>h3{
+    margin-bottom: 15px;
+}
+
+.foodStories{
+    grid-column: 3/5;
+    grid-row: 5;
+    margin-left: 90px;
+    display: flex;
+    flex-direction: row;
+}
+
+.foodStoriesCard{
+    background-color: var(--baigeLight);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    /* Dette gør at billedet ikke flyder over på sectionen */
+    margin: 0;
+    margin-right: 10px;
+    color: var(--brownBase);
+}
+
+.foodStoriesCard:hover{
+    background-color: var(--baigeBase);
+}
+
+
+
+/* ----------Popular Cookware----------- */
+.popularCookwareWrapper{
+    grid-column: 3/5;
+    grid-row: 7;
+    /* margin-left: 90px;  */
+    display: flex;
+}
+
+.popularCookwareHeader {
+    grid-column: 3/5;
+    grid-row: 6;
+    margin-left: 90px;
+}
+
+.popularCookwareHeader>h3 {
+    margin-top: 90px;
+    margin-bottom: 15px;
+}
+
+.popularCookware{
+    background-color: var(--baigeLight);
+    max-width: 320px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 20px;
+    width: 400px;
+}
+
+.popularCookwareWrapper {
+    max-width: 1378px;
+    overflow: auto;
+    max-height: 300px;
+}
+
+.popularCookwareWrapper::-webkit-scrollbar {
+    display: none;
+    /* dette fjerner scrollbar fra overflow fra overstående css */
+}
+
+.popularCookware>h4{
+    margin: 0;
+}
+
+.popularCookwareBottom{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.popularCookwareBottom>img{
+    max-width: 160px;
+}
+
+.popularCookwareBottom>a{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    max-height: 30px;
+}
+
+
+
+/* -------------Tips and tricks------------ */
+.tipsAndTricksWrapper{
+    grid-column: 3/5;
+    grid-row: 9;
+    display: flex;
+    overflow: auto;
+    max-height: 300px;
+}
+
+.tipsAndTricks{
+    grid-column: 3/5;
+    grid-row: 9;
+    background-color: var(--baigeLight);
+    width: 320px;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 90px;
+    flex: 0 0 auto;
+    /* Dette gør så kassen ikke bliver mast. 
+    både flex grow og flex shrink er sat til 0 så kassen ikke ændre størrelse */
+}
+
+.tipsAndTricksHeader{
+    grid-column: 3/5;
+    grid-row: 8;
+    margin-left: 90px;
+}
+
+.tipsAndTricksHeader>h3,p{
+    margin: 0px;
+}
+
+.tipsAndTricksHeader>h3{
+    margin-top: 90px;
+}
+
+.tipsAndTricksHeader>p{
+    margin-bottom: 15px;
+}
+
+.tipsAndTricks>h4{
+    margin: 5px;
+}
+
+.tipsAndTricksNameAndPic{
+    display: flex;
+    align-items: center;
+}
+
+.tipsAndTricksNameAndPic>h5{
+    margin: 0;
+}
+
+.tipUnderheader{
+    font-weight: var(--fw-bold);
+    font-style: italic;
+}
+
+.tipsAndTricksWrapper::-webkit-scrollbar {
+    display: none;
+    /* dette fjerner scrollbar fra overflow fra overstående css */
+}
+
+
+
+/* _______________Recipe________________ */
+
+.recipeUser{
+    grid-column: 3/5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipeUserAndPic{
+    display: flex;
+    align-items: center;
+}
+.recipeUserAndPic>h4{
+    margin: 0;
+}
+
+.recipeUserAndPic>a>img{
+    max-width: 40px;
+    display: flex;  
+    align-items: center;
+}
+
+.recipeTop{
+    margin-top: 30px;   
+    grid-column: 3/4;
+    grid-row: 1;
+    margin-left: 90px;
+    max-height: 200px;
+    max-width: 800px;
+}
+
+.recipeTop>img{
+    max-width: 800px;
+}
+
+.recipeNameAndShare{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.recipeNameAndShare>h2{
+    margin: 0;
+}
+
+.recipeNameAndShare>img{
+    margin-left: 30px;
+    margin-top: 15px;
+    max-height: 40px;
+}
+
+.recipeBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+margin-top: 10px;
+}
+.recipeBottom>div{
+    width: 100px;
+}
+
+.recipeBottom :nth-child(3){
+    margin-right: 170px;
+}
+
+.iconMid{
+    display: flex;
+    flex-shrink: 0;
+    width: 33%;
+    align-items: center;
+}
+
+.iconMid>img{
+    max-height: 40px;
+}
+
+.iconMid>h4{
+    margin: 0px;
+    flex-shrink: 0;
+}
+
+.recipeQuote{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.recipeChefName{
+    font-size: 20px;
+    margin: 0;
+    color: grey;
+}
+
+.reviews {
+    grid-column: 5/-1;
+    grid-row: 5;
+    /* margin-left: 90px; */
+}
+
+.recipeIngredients{
+    grid-column: 3/5;
+    grid-row: 2;
+    margin-left: 90px;
+    display: flex;
+}
+
+.recipeIngredients>h1{
+    display: block;
+}
+
+.ingredientsList{
+    padding: 0;
+}
+
+.ingredientsList>h1{
+    margin-bottom: 0;
+}
+.ingredientsList>h5{
+    margin-top: 0;
+}
+
+.ingredientsList>li{
+    margin-left: 20px;
+    line-height: 150%;
+}
+
+.procedureList{
+    width: 400px;
+    margin-right: 150px;
+}
+
+.procedureList>li{
+    margin-left: 20px;
+    line-height: 150%;
+}
+
+.procedureList>h1{
+    margin-bottom: 75px;
+}
+
+.recipeTips{
+    grid-column: 3/5;
+    grid-row: 4;
+    margin-left: 90px;
+}
+
+.reviews{
+    grid-column: 4/5;
+    grid-row: 1;
+    margin-left: 5  0px;
+}
+
+.recipeReview{
+    background-color: var(--baigeLight);
+    padding: 10px;
+    border-radius: 15px;
+    width: 300px;
+}
+
+.reviewTop{
+    display: flex;
+    align-items: center;
+}
+
+.reviewTop>h5{
+    margin: 5px;
+}
+
+.reviewTop>img{
+    max-height: 20px;
+}
+
+.reviewMid{
+    display: flex;
+    margin: 5px;
+    margin-left: 27px;
+}
+
+.reviewMid>p{
+    margin-right: 5px;
+}
+
+.reviewBottom>h5{
+    margin-bottom: 0px;
+}
+
+.recipeTipsHeader{
+    margin-left: 90px;
+    grid-row: 3;
+    grid-column: 3/5;
+}
+
+.recipeTipsWrapper{
+    grid-row: 4;
+    grid-column: 3/5;
+}
 
 
 

@@ -8,30 +8,195 @@
     <script src="./assets/js/app.js" defer></script>
 </head>
 <body>
+    <nav>
+        <section class="topNav">
+            <header class="navName">Vianda</header>
+
+            <div class="searchbar">
+                <img src="./assets/img/search.png" alt="Search icon">
+            </div>
+
+            <section class="navButtons">
+            <a href="#" class="create">
+                <h5>+ Create</h5>
+            </a>
+
+            <div class="notif">
+                <a href="#"><img src="./assets/img/bell.svg" alt="Bell icon"></a>
+            </div>
+
+            <div class="user">
+                <a href="./yourpage.html"><img src="./assets/img/user.png" alt="Picture of Ellis Berrie"></a>
+            </div>
+            </section>
+        </section>
+    </nav>
     <main>
+        <aside class="sideNav">
+            <section class="recipeHub">
+                <h5>RECIPE HUB</h5>
+    
+                <div class="sideNavButton">
+                    <img src="./assets/img/home.png" alt="Home icon">
+                    <h6><a href="./index.html">Home</a></h6>
+                </div>
+    
+                <div class="sideNavButton">
+                    <img src="./assets/img/openBook.png" alt="Book icon">
+                    <h6><a href="#">Food Stories</a></h6>
+                </div>
+    
+                <div class="sideNavButton">
+                    <img src="./assets/img/telescope.png" alt="telescope icon">
+                    <h6><a href="./recipe.html">Explore</a></h6>
+                </div>
+    
+                <div class="sideNavButton">
+                    <img src="./assets/img/ingredients.png" alt="Ingredients icon">
+                    <h6><a href="#">Ingredients</a></h6>
+                </div>
+            </section>
+    
+            <section class="following">
+                <h5>FOLLOWING</h5>
+
+                <div class="sideNavButton">
+                    <img src="./assets/img/ellisProfilePicture.png" alt="ellis">
+                    <h6><a href="#">Jacob Fontanelli</a></h6>
+                </div>
+
+                <div class="sideNavButton">
+                    <img src="./assets/img/ellisProfilePicture.png" alt="ellis">
+                    <h6><a href="#">Mia Rodriquez</a></h6>
+                </div>
+
+                <div class="sideNavButton">
+                    <img src="./assets/img/ellisProfilePicture.png" alt="ellis">
+                    <h6><a href="#">Toni Montana</a></h6>
+                </div>
+
+                <div class="sideNavButton">
+                    <img src="./assets/img/ellisProfilePicture.png" alt="ellis">
+                    <h6><a href="#">Elsa Hansen</a></h6>
+                </div>
+            </section>
+            <section class="likedRecipes">
+                <h5>LIKED RECIPES</h5>
+
+                <div class="sideNavButton">
+                    <img src="./assets/img/butterChicken.png" alt="Butter Chicken">
+                    <h6><a href="#">Pasta carbonara</a></h6>
+                </div>
+
+                <div class="sideNavButton">
+                    <img src="./assets/img/butterChicken.png" alt="Butter Chicken">
+                    <h6><a href="#">Egg-Fried rice</a></h6>
+                </div>
+
+                <div class="sideNavButton">
+                    <img src="./assets/img/butterChicken.png" alt="Butter Chicken">
+                    <h6><a href="#">Potato salad</a></h6>
+                </div>
+
+                <div class="sideNavButton">
+                    <img src="./assets/img/butterChicken.png" alt="Butter Chicken">
+                    <h6><a href="#">Butter chiken</a></h6>
+                </div>
+            </section>
+        </aside>
+
+        <section class="recipeOfTheDay">
         <section class="recipeOfTheDayTop">
             <h1>Recipe of the day</h1>
-            <div><img src="./assets/img/ellisProfilePicture.png" alt="Ellis Barrie Picture"> <figcaption><h3>Ellis Berrie</h3></figcaption></div>
+            <div class="recipeOfTheDayNamePic">
+                <a href="./yourpage.html"><img src="./assets/img/ellisProfilePicture.png" alt="Ellis Barrie Picture"></a> 
+                <h3>Ellis Berrie</h3>
+            </div>
         </section>
 
-        <section class="recipeOfTheDaymid">
+        <section class="recipeOfTheDayMid">
             <img src="./assets/img/spaghettiCarbonara.png" alt="Spaghetti Carbonara">
         </section>
 
         <section class="recipeOfTheDayBottom">
-            <div class="iconBig">
-                <img src="./assets/img/clock-regular-full.svg" alt="Clock">
-                <h5>Time: 30 min</h5>
+            <div class="icons">
+                <div class="iconBig">
+                    <img src="./assets/img/clock-regular-full.png" alt="Clock">
+                    <h4>Time: 30 min</h4>
+                </div>
+                <div class="iconBig">
+                    <img src="./assets/img/utensils-solid-full.png" alt="Fork and knife">
+                    <h4>Servings: 2 people</h4>
+                </div>
+                <div class="iconBig">
+                    <img src="./assets/img/gauge-high-solid-full.png"   alt="Difficultymeter">
+                    <h4>Difficulty: Easy</h4>
+                </div>
             </div>
-            <div class="iconBig">
-                <img src="./assets/img/utensils-solid-full.svg" alt="Fork and knife">
-                <h5>Servings: 2 people</h5>
+            <a href="recipe.html" class="buttonBig">Go to recipe</a>
+        </section>
+        <h2 class="homeRecipeName">Easy spaghetti carbonara</h2>
+        <div class="homeQuoteName">
+            <h4 class="homeQuote">"Perfect for weeknight meals or   special occasions"</h4>
+            <h4 class="homeChefName"> - Ellis Berrie</h4>
+        </div>
+        </section>
+
+        <section class="top10Header">
+            <h3>Top 10 dishes</h3>
+        </section>
+
+        <section class="top10">
+            <div class="top10Wrapper">
+                <div class="plads"></div>
             </div>
-            <div class="iconBig">
-                <img src="./assets/img/gauge-high-solid-full (1).svg" alt="Difficultymeter">
-                <h5>Difficulty: Easy</h5>
-            </div>
-            <button type="button" onclick="location.href='recipe.html'>Go to recipe</button>
+        </section>
+
+        <section class="foodStoriesHeader">
+            <h3>Popular food Stories > </h3>
+        </section>
+        <section class="foodStories">
+            
+            <figure class="foodStoriesCard">
+                <img src="./assets/img/foodStoryFewerCalories.png" alt="Woman eating from bowl">
+                <figcaption>Fewer Calories - Fewer Problems</figcaption>
+                <p>Linda Eliott</p>
+            </figure>
+
+            <figure class="foodStoriesCard">
+                <img src="./assets/img/foodstoryFromGhana.png" alt="Women eating with chopsticks">
+                <figcaption>From Ghana to NY</figcaption>
+                <p>Angela Ngonko</p>
+            </figure>
+
+            <figure class="foodStoriesCard">
+                <img src="./assets/img/foodStoryCarnivalFavorites.png" alt="Man using a grill">
+                <figcaption>Carnival favorites</figcaption>
+                <p>Mc Earty Wilson</p>
+            </figure>
+
+            <figure class="foodStoriesCard">
+                <img src="./assets/img/foodStoryGreekExcellence.png" alt="Food infront of the ocean">
+                <figcaption>Greek Excellence</figcaption>
+                <p>Randy Gyokeres</p>
+            </figure>
+        </section>
+
+        <section class="popularCookwareHeader">
+            <h3>Popular Cookware</h3>
+        </section>
+
+        <section class="popularCookwareWrapper">
+                <div class="plads"></div>
+        </section>
+
+
+        <section class="tipsAndTricksHeader">
+            <h3>Cooking and utensil-tips</h3>
+            <p>Using these tips, cooking will feel less like a chore and more like a fun activity!</p>
+        </section>
+        <section class="recipeTipsWrapper">
+                <div class="plads"></div>
         </section>
     </main>
     
