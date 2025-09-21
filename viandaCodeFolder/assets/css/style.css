@@ -849,8 +849,38 @@ margin-top: 10px;
 }
 
 .recipeTipsWrapper{
-    grid-row: 4;
+    grid-row: 3;
     grid-column: 3/5;
+    display: flex;
+}
+
+.recipeTip{
+    background-color: var(--baigeLight);
+    border-radius: 15px;    
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.recipeTip>h5{
+    margin: 0;
+}
+
+.recipeTip>p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.featuredCard{
+    background-color: var(--baigeLight);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.featuredCard>h4,h5,p{
+    margin: 5px;
 }
 
 

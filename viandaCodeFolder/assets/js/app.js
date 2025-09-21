@@ -40,15 +40,11 @@ for (let i = 0; i < numbersTop10.length; i++) {
 
 
 
-// Her er mit array af tal på top 10.
+
 const numbersCookware = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
 
-
-// Her targeter jeg min html class = .top10Wrapper, og sørger for at de indhold der bliver genereret kommer i mit html.
 const resultElementCookware = document.querySelector(".popularCookwareWrapper");
 
-
-// Her laver jeg et loop som generere én article for hvert navn, det bliver ved til der ikke er flere navne tilbage.
 for (let i = 0; i < numbersCookware.length; i++) {  
     const numberCookware = numbersCookware[i];
     resultElementCookware.innerHTML +=`
@@ -67,15 +63,10 @@ for (let i = 0; i < numbersCookware.length; i++) {
 }
 
 
-// Her er mit array af tal på top 10.
 const numbersTips = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
 
-
-// Her targeter jeg min html class = .top10Wrapper, og sørger for at de indhold der bliver genereret kommer i mit html.
 const resultElementTips = document.querySelector(".tipsAndTricksWrapper");
 
-
-// Her laver jeg et loop som generere én article for hvert navn, det bliver ved til der ikke er flere navne tilbage.
 for (let i = 0; i < numbersTips.length; i++) {  
     const numberTips = numbersTips[i];
     resultElementTips.innerHTML +=`
@@ -93,28 +84,3 @@ for (let i = 0; i < numbersTips.length; i++) {
         `;
 }
 
-
-// Her er mit array af tal på top 10.
-const numbersRecipeTips = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
-
-
-// Her targeter jeg min html class = .top10Wrapper, og sørger for at de indhold der bliver genereret kommer i mit html.
-const resultElementRecipeTips = document.querySelector(".recipeTipsWrapper");
-
-// Her laver jeg et loop som generere én article for hvert navn, det bliver ved til der ikke er flere navne tilbage.
-for (let i = 0; i < numbersRecipeTips.length; i++) {  
-    const numberRecipeTips = numbersRecipeTips[i];
-    resultElementRecipeTips.innerHTML +=`
-            <div class="tipsAndTricks">
-                <h4>Set the mood</h4>
-                <div class="tipsAndTricksNameAndPic">
-                <img src="./assets/img/cookAndBakerProfilePicture.png" alt="Cook and baker picture">
-                <h5>Jens Petersen</h5>
-                </div>
-                <p class="tipUnderheader">Create a nice environment</p>
-                <p>Put on your favorite music, podcast, or audiobook.
-                Keep the kitchen well-lit and tidy before you start.
-                Light a candle or open a window for fresh air</p>
-            </div>
-        `;
-}
