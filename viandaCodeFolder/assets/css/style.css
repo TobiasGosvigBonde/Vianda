@@ -344,13 +344,13 @@ nav{
 /* ----------------Recipe of the day------------- */
 .recipeOfTheDay{
     max-width: 100%;
-    margin-left: 90px;
 }
 
 .recipeOfTheDayTop{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 90px;
 }
 
 .recipeOfTheDayTop>h1{
@@ -396,7 +396,7 @@ nav{
 .top10Header{
     grid-column: 3/5;
     grid-row: 2;
-    margin-left: 90px;
+    margin-top: 90px;
 }
 
 .top10{
@@ -415,9 +415,7 @@ nav{
     display: flex;
 }
 
-.plads{
-    margin-left: 90px;
-}
+
 
 .top10NameAndNumber{
     display: flex;
@@ -507,7 +505,6 @@ nav{
 .foodStoriesHeader{
     grid-column: 3/5;
     grid-row: 4;
-    margin-left: 90px;
     margin-top: 90px;
 }
 
@@ -523,7 +520,6 @@ nav{
 .foodStories{
     grid-column: 3/5;
     grid-row: 5;
-    margin-left: 90px;
     display: flex;
     flex-direction: row;
 }
@@ -558,7 +554,7 @@ nav{
 .popularCookwareHeader {
     grid-column: 3/5;
     grid-row: 6;
-    margin-left: 90px;
+    /* margin-left: 90px; */
 }
 
 .popularCookwareHeader>h3 {
@@ -635,7 +631,7 @@ nav{
 .tipsAndTricksHeader{
     grid-column: 3/5;
     grid-row: 8;
-    margin-left: 90px;
+    /* margin-left: 90px; */
 }
 
 .tipsAndTricksHeader>h3,p{
@@ -701,7 +697,6 @@ nav{
     margin-top: 30px;   
     grid-column: 3/4;
     grid-row: 1;
-    margin-left: 90px;
     max-height: 200px;
     max-width: 800px;
 }
@@ -777,7 +772,7 @@ margin-top: 10px;
 .recipeIngredients{
     grid-column: 3/5;
     grid-row: 2;
-    margin-left: 90px;
+    /* margin-left: 90px; */
     display: flex;
 }
 
@@ -818,13 +813,15 @@ margin-top: 10px;
 .recipeTips{
     grid-column: 3/5;
     grid-row: 4;
-    margin-left: 90px;
+    /* margin-left: 90px; */
+    margin-bottom: 90px;
 }
 
 .reviews{
     grid-column: 4/5;
     grid-row: 1;
-    margin-left: 5  0px;
+    margin-left: 90px;
+    margin-top: 90px;
 }
 
 .recipeReview{
@@ -832,6 +829,10 @@ margin-top: 10px;
     padding: 10px;
     border-radius: 15px;
     width: 300px;
+}
+
+.recipeFull{
+    display: flex;
 }
 
 .reviewTop{
@@ -891,6 +892,11 @@ margin-top: 10px;
     margin-bottom: 20px;
 }
 
+.featuredProducts{
+    grid-row: 2;
+    grid-column: 4/5;
+}
+
 .featuredCard{
     background-color: var(--baigeLight);
     border-radius: 15px;
@@ -918,6 +924,9 @@ margin-top: 10px;
 .content {
     flex: 1;
     background-color: white;
+    padding: 0;
+    padding-top: 90px;
+    max-width: 1200px;
 }
 
 .profile-section {
@@ -952,6 +961,10 @@ margin-top: 10px;
 .profile-details p {
     color: #666;
     font-size: 24px;
+}
+
+.recipes-section{
+    max-width: 1200px;
 }
 
 .recipes-section h2 {
